@@ -1,0 +1,4 @@
+<select class="select" (change)="changeOption($event)">
+    <option value="0">Seleccione</option>
+    <option *ngFor="let item of options" value="{{item.id}}">{{item.nombre}}</option>
+</select>

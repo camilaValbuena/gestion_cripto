@@ -1,0 +1,97 @@
+@import '../../../../styles.scss';
+
+.signin {
+    position: absolute;
+    width: 631px;
+    height: 507px;
+    //right: 405;
+    bottom: 177px;
+    top: 177px;
+    left: calc(50% - 631px/2 - 0.5px);
+    //Pendiente, falta cuadrar la  margen del bottom
+    background: $white-1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonlogin{
+    background: $yellow;
+    border-radius: 60px;
+    border: none;
+
+    width: 98px;
+    height: 38px;
+    left: 267px;
+    right: 266px;;
+    top: 397px;
+}
+
+.titlelogin{  
+    width: 63px;
+    height: 23px;
+    bottom: 19px;
+    left: 99px;
+    top: 67px;
+}
+
+::placeholder {
+    color: $gray-3;
+    font-size: 16px;
+    left: 15px;
+}
+
+hr {
+    position: absolute;
+    width: 437px;
+    left: 99px;
+    top: 109px;
+
+    border: 1px solid $white-3;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+
+
+    width: 270px;
+    height: 22px;
+    top: 25px;
+    left: 15px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    border-style: none;
+    border-bottom: 1px solid;
+}
+
+.cajatextouser {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 300px;
+    height: 74px;
+    left: 166px;
+    top: 169px;
+}
+
+.cajatextopassword {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 300px;
+    height: 74px;
+    left: 166px;
+    top: 263px;
+}
+

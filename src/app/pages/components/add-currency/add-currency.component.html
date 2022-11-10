@@ -1,0 +1,12 @@
+<div class="overlay">
+    <div class="modal">
+        <a class="close" (click)="closeModal()"><img src="../../../../assets/x.png" alt=""></a>
+        <label class="currency">Listado de monedas</label>
+            <div class="select-modal">
+                <app-select [options]=currency (idOption)="getIdSelect($event)"></app-select>
+            </div>
+        <button type="button" class="buttonsave" (click)="save()">Guardar</button>
+        <button type="button" class="buttoncancel">Cancelar</button>
+    </div>
+
+</div>

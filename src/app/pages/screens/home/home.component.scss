@@ -1,0 +1,81 @@
+@import '../../../../styles.scss';
+
+
+.titlemonedas {
+    width: 122px;
+    height: 23px;
+    left: $left-standard;
+    top: 265px;   
+    @media #{$tablet-max} {
+        left: $left-table;
+    }
+    @media #{$phone-max} {
+       left: $left-phone;
+    } 
+}
+
+.buttonagregar {
+    width: 186px;
+    height: 38px;
+    left: 1068px;
+    top: 254px;
+    font-size: 15px;
+    background: $yellow;
+    border-radius: 60px;
+    border: none;    
+    @media #{$tablet-max} {
+        left: 991px;
+    }
+    @media #{$phone-max} {
+       left: 991px;
+    }
+}
+
+hr {
+    position: absolute;
+    width: 1074.5px;
+    height: 0px;
+    left: $left-standard;
+    top: 304.5px;
+    border: 1px solid $white-3;
+    @media #{$tablet-max} {
+        left: $left-table;
+    }
+    @media #{$phone-max} {
+       left: $left-phone;
+    }
+}
+
+.select-country{
+    margin-left: 172px;
+}
+
+.select-cripto{
+    padding-right: 13%;
+}
+
+.container{
+    left: $left-standard;
+    position: absolute;
+    @media #{$tablet-max} {
+        left: $left-table;
+    }
+    @media #{$phone-max} {
+       left: $left-phone;
+    }
+}
+
+.container .box {
+    width:540px;
+    margin:50px;
+    margin-left: 0px;
+    display:table;
+}
+.container .box .box-row {
+    display:table-row;
+}
+.container .box .box-cell {
+    display:table-cell;    
+    width:25%;
+    padding:10px;
+}

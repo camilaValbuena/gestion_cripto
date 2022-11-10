@@ -1,0 +1,27 @@
+<div>
+    <div class="container">
+        <div class="box">
+            <div class="box-row">
+                <div class="box-cell box1">
+                    <app-select [options]=countries></app-select>
+                </div>
+                <div class="box-cell box2">
+                    <app-select [options]=users></app-select>
+                </div>
+                <div class="box-cell box2">
+                    <app-select [options]=manager></app-select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <label class="titlemonedas">Mis Monedas</label>
+    <button type="button" class="buttonagregar" (click)="openModal()">AGREGAR MONEDA</button>
+    <hr>
+    <app-table></app-table>
+    <div class="" *ngIf="showModal">
+        <app-add-currency (close)="closeModal($event)"></app-add-currency>
+    </div>
+</div>

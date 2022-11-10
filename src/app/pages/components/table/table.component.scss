@@ -1,0 +1,44 @@
+@import '../../../../styles.scss';
+
+.table {
+    position: absolute;
+    height: 64px;
+    left: $left-standard;
+    top: 344px;
+    @media #{$tablet-max} {
+        left: $left-table;
+    }
+    @media #{$phone-max} {
+       left: $left-phone;
+    }
+}
+
+.thead {
+    background: $white-2;
+    border-bottom: 1px solid;
+}
+
+.col1{
+    width: 160px;
+}
+
+.col2{
+    width: 292px;
+}
+
+.col3{
+    width: 200px;
+}
+
+.col4{
+    width: 122px;
+}
+
+.col5{
+    width: 304px;
+    text-align: right;
+}
+
+a{
+    padding-right: 32px;
+}
